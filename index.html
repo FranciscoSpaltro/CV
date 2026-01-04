@@ -169,103 +169,125 @@
   </div>
    <!-- Experience -->
 
+    <!-- Work -->
+    <div class="ds-work-section">
+      <div class="container">
+        <h2 class="ds-heading">Últimos trabajos</h2>
 
-  
+        <div class="ds-work-list-section">
+          <div class="row g-4">
 
-   <!--  Work -->
-   <div class="ds-work-section">
-     <div class="container">
-          <h2 class="ds-heading">Últimos trabajos</h2>
-          <div class="ds-work-list-section">
-            <div class="ds-work-list">
-              <div class="row">
-                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-                      <section>
-                          <h3 class="ds-work-tilte">Desarrollo e implementación de una computadora de abordo para un satélite cubesat
-                            utilizando un sistema operativo en tiempo real y bibliotecas de código abierto</h3>
-                          <p> Este proyecto fue desarrollado como Trabajo Práctico Profesional, requisito para optar por el título de grado en ingeniería electrónica. El mismo se enmarcó dentro de una inicitativa más amplia impulsada por la Facultad de Ingeniería de la Universidad de Buenos Aires, cuyo objetivo es desarrollar y lanzar al espacio un CubeSat, satélite de pequeñas dimensiones diseñado para experimentar y avanzar en el campo de la tecnología espacial. </p>
-                          <p> En este contexto, nos enfocamos en la implementación de un prototipo funcional de la computadora de abordo (OBC, On-Board Computer). El objetivo principal fue desarrollar una plataforma estandarizada que no solo facilite las futuras iteraciones del satélite sino que también sirva como una herramienta pedagógica y técnica para el desarrollo de competencias en el ámbito aerospacial. </p>
-                          <p> El proyecto contempló la investigación de distintas arquitecturas de microcontroladores compatibles con la bibliografía acerca de los Cubesat y con los requisitos específicos del proyecto, el desarrollo de diversos protocolos de comunicación, esenciales para la interacción entre los distintos subsistemas del satélite, con un efoque en la fiabilidad y la eficiencia para aplicaciones aerospaciales y el desarrollo de un entorno de pruebas CI/CD (Continous Integration - Continous Delivery) que permita automatizar y agilizar las validaciones e implementación de actualizaciones en la OBC, asegurando su correcto funcionamiento y adaptación continua a nuevas misiones o requerimientos del satélite. Se utilizó FreeRTOS como sistema operativo, libopencm3 como biblioteca de código abierto y Gitlab CI/CD junto a una Raspberry Pi 5 para las pruebas automatizadas </p>
-                          <p> Créditos de la imágen: ESA/J Huart</p>
-                          <a href="https://gitlab.com/fspaltro/FiubaSAT" target="_blank" class="ds-button">Repositorio</a>
-                          <a href="assets/docs/Informe_Tesis.pdf" target="_blank" class="ds-button">📄 Ver informe de tesis</a>
-                      </section>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                      <figure><img src="assets/images/trabajos/cubesat.png"></figure>
-                  </div>
-              </div>
-            </div>
+            <!-- 1) CubeSat -->
+            <div class="col-12 col-md-6">
+              <article class="ds-work-card">
+                <h3 class="ds-work-title">
+                  Desarrollo e implementación de una computadora de abordo para un satélite cubesat utilizando un sistema operativo en tiempo real y bibliotecas de código abierto.
+                </h3>
 
-            <div class="ds-work-list">
-              <div class="row">
-                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-                      <section>
-                          <h3 class="ds-work-tilte">Desarrollo de un motor de ajedrez en C++</h3>
-                          <p> Proyecto personal orientado al diseño de software y la programación orientada a objetos. Implementación de la lógica del juego de ajedrez, incluyendo validación de movimientos, gestión de turnos, estados especiales y una arquitectura modular basada en clases. </p>
-                          <p> El proyecto se encuentra en desarrollo e incluye una interfaz gráfica (GUI). El foco principal está puesto en arquitectura de software, separación de responsabilidades y diseño mantenible en C++. </p>
-                          <a href="https://github.com/FranciscoSpaltro/ChessBuddy" target="_blank" class="ds-button">Repositorio</a>
-                          <p></p>
-                      </section>
-                  </div>
-              </div>
+                <p class="ds-work-desc">
+                  Trabajo Práctico Profesional de grado orientado al diseño e implementación de un prototipo funcional de computadora de abordo (OBC) para un CubeSat junto a su correspondiente entorno de validación CI/CD.
+                </p>
+
+                <details class="ds-work-more">
+                  <summary>Ver más</summary>
+
+                  <p>
+                    El proyecto se enmarcó dentro de una iniciativa de la Facultad de Ingeniería de la
+                    Universidad de Buenos Aires orientada al desarrollo y lanzamiento de un CubeSat.
+                    Se abordó la investigación de arquitecturas de microcontroladores compatibles con
+                    estándares CubeSat, el desarrollo de protocolos de comunicación entre subsistemas
+                    y la implementación de un entorno de validación automatizada mediante CI/CD.
+                  </p>
+
+                  <p>
+                    Se utilizó FreeRTOS como sistema operativo, libopencm3 como biblioteca de bajo nivel
+                    y GitLab CI/CD junto con una Raspberry Pi para la ejecución de pruebas automatizadas,
+                    priorizando la fiabilidad y la extensibilidad del sistema.
+                  </p>
+                </details>
+                <p></p>
+                <div class="ds-work-actions">
+                  <a href="https://gitlab.com/fspaltro/FiubaSAT" target="_blank" class="ds-button">Repositorio</a>
+                  <a href="assets/docs/Informe_Tesis.pdf" target="_blank" class="ds-button">📄 Informe</a>
+                </div>
+              </article>
             </div>
 
-            <div class="ds-work-list">
-              <div class="row">
-                  <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-                      <section>
-                          <h3 class="ds-work-tilte">Desarrollo de un solitario en sus versiones Spider y Klondike en Java</h3>
-                          <p>Desarrollo del popular videojuego "Solitario" en Java, como parte del trabajo práctico de Algoritmos y Programación III (FIUBA). se implementaron las versiones Klondike y Spider, tanto en modo fácil (un palo) como dificil (cuatro palos). Se utilizó JavaFX para el entorno gráfico. Posee un contador de puntos y la posibilidad de guardar el progreso de una partida.</p>
-                          <a href="https://github.com/FranciscoSpaltro/solitario" target="_blank" class="ds-button"> Repositorio</a>
-                      </section>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                      <figure><img src="assets/images/trabajos/solitario.png"></figure>
-                  </div>
-              </div>
+            <!-- 2) ChessBuddy -->
+            <div class="col-12 col-md-6">
+              <article class="ds-work-card">
+                <h3 class="ds-work-title">Motor de ajedrez en C++</h3>
+
+                <p class="ds-work-desc">
+                  Motor de ajedrez desarrollado en C++, enfocado en la implementación rigurosa de la lógica del juego y el modelado del estado de la partida. El proyecto incluye la generación y validación de movimientos legales para cada pieza, la simulación de movimientos para detectar situaciones de jaque y jaque mate, y la gestión de estados especiales del juego. Se diseñó una arquitectura modular orientada a objetos, separando reglas, estado del tablero y control del juego, y se desarrollaron pruebas para validar el comportamiento del motor. Actualmente se encuentra en proceso de desarrollo y de integración con una interfaz gráfica.
+                </p>
+
+                <div class="ds-work-actions">
+                  <a href="https://github.com/FranciscoSpaltro/ChessBuddy" target="_blank" class="ds-button">Repositorio</a>
+                </div>
+              </article>
             </div>
-            <div class="ds-work-list">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-                        <section>
-                            <h3 class="ds-work-tilte">Medidor de capacidad</h3>
-                            <p>Desarrollo de un programa en ASM que calcula el valor de un capacitor desconocido y muestra en la PC el valor obtenido y su curva de carga, como parte del trabajo práctico integrador de Laboratorio de Microprocesadores (FIUBA). El programa se grabó sobre un Atmega328p y se utilizó la placa de desarrollo Arduino UNO. El sistema genera un pulso de 5V que carga el capacitor y adquiere los valores de tensión utilizando el ADC, hasta llegar al 63.3% de la carga. Con el TIMER 1 se mide el tiempo de carga y, luego, se calcula el valor del capacitor. Se transmite via serie los valores medidos y la capacitancia calculada.</p>
-                            <a href="https://github.com/FranciscoSpaltro/Capacimeter_ASM" target="_blank" class="ds-button"> Repositorio</a>
-                            <p></p>
-                        </section>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-                        <figure><img src="assets/images/trabajos/capacimeter.png"></figure>
-                    </div>
-              </div>  
+
+            <!-- 3) Solitario -->
+            <div class="col-12 col-md-6">
+              <article class="ds-work-card">
+                <h3 class="ds-work-title">Solitario (Spider y Klondike) en Java</h3>
+
+                <p class="ds-work-desc">
+                  Implementación en Java con JavaFX (modo fácil y difícil), contador de puntos y guardado de partida.
+                </p>
+
+                <div class="ds-work-actions">
+                  <a href="https://github.com/FranciscoSpaltro/solitario" target="_blank" class="ds-button">Repositorio</a>
+                </div>
+              </article>
             </div>
-            
-              </div>
+
+            <!-- 4) Capacimeter ASM -->
+            <div class="col-12 col-md-6">
+              <article class="ds-work-card">
+                <h3 class="ds-work-title">Medidor de capacidad (ASM + ATmega328p)</h3>
+
+                <p class="ds-work-desc">
+                  Medición de capacitancia por curva de carga: pulso 5V, ADC, tiempo con TIMER1 y envío serie para graficar
+                  valores en PC.
+                </p>
+
+                <div class="ds-work-actions">
+                  <a href="https://github.com/FranciscoSpaltro/Capacimeter_ASM" target="_blank" class="ds-button">Repositorio</a>
+                </div>
+              </article>
             </div>
+
+          </div> <!-- /.row -->
+        </div> <!-- /.ds-work-list-section -->
+      </div> <!-- /.container -->
+    </div> <!-- /.ds-work-section -->
+    <!-- Work -->
+
+   <footer class="ds-footer">
+      <div class="container">
+        <div class="ds-footer-inner text-center">
+          <h4 class="ds-footer-title">Información de contacto</h4>
+          <p class="ds-footer-subtitle">
+            Si te interesó mi perfil, podés contactarme por
+          </p>
+
+          <div class="ds-footer-actions">
+            <a href="https://www.linkedin.com/in/francisco-spaltro/" class="ds-button ds-button--ghost">LinkedIn</a>
+            <a href="mailto:fspaltro@fi.uba.ar" class="ds-button ds-button--ghost">fspaltro@fi.uba.ar</a>
           </div>
-     </div>
-   </div>
-   <!--  Work -->
 
+          <!-- <div class="ds-footer-meta">
+            <span>© <span id="year"></span> Francisco Spaltro</span>
+          </div> -->
+        </div>
+      </div>
+    </footer>
 
-
-
-   <!--  footer -->
-   <footer class="ds-footer text-center">
-     <div class="container">
-        <section>
-          <!-- <span>Stay in touch</span> -->
-          <h4>Información de contacto</h4>
-          <p>Si te interesó mi perfil, no dudes en contactarme mediante</p>
-          <a href="https://www.linkedin.com/in/francisco-spaltro/" class="ds-button">Linkedin</a>
-          <p></p>
-          <p>o por email a </p> 
-          <a href="mailto:fspaltro@fi.uba.ar" class="ds-button">fspaltro@fi.uba.ar</a></p>
-        </section>
-        <!-- <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span> -->
-     </div>
-   </footer>
+    <!-- <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
