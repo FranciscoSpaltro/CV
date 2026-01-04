@@ -47,37 +47,42 @@
     <!-- banner -->
     <div class="ds-banner">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <figure>
-              <img src="assets/images/banner2.png">
-            </figure>
+
+        <!-- Texto en 2 columnas -->
+        <div class="row align-items-start ds-hero">
+          <div class="col-12 col-md-6">
+            <div class="ds-hero-left">
+              <span class="ds-banner-welcome">¡Bienvenido!</span>
+              <h1 class="ds-hero-title">
+                Soy Francisco Spaltro,<br>
+                ingeniero electrónico.
+              </h1>
+            </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <section>
-                <h1>
-                  <span>¡Bienvenido!</span>
-                  Soy Francisco Spaltro, ingeniero electrónico.
-                </h1>
-            </section>
+
+          <div class="col-12 col-md-6">
+            <div class="ds-hero-right">
+              <h2 class="ds-heading">ACERCA DE MÍ</h2>
+              <p class="ds-hero-about">
+                Soy ingeniero electrónico, recientemente graduado en la Facultad de Ingeniería de la Universidad de Buenos Aires. Actualmente estoy realizando una beca de investigación en la Scuola universitaria professionale della Svizzera italiana (SUPSI), en Suiza, con finalización prevista para agosto de 2026. Trabajo en el desarrollo de sistemas embebidos y de software en C/C++, con especial interés en el diseño orientado a objetos y la arquitectura de software. Mis intereses incluyen la aplicación de estas competencias en entornos espaciales, industriales y biomédicos, así como el desarrollo de proyectos de software de propósito general.
+              </p>
+            </div>
           </div>
         </div>
+
+        <div class="ds-mini-strip">
+          <div class="ds-mini-strip-inner">
+            <img src="assets/images/banner_electronic.jpg" alt="Electronics">
+            <img src="assets/images/banner_space.jpg" alt="Space">
+            <img src="assets/images/banner_programming.jpg" alt="Programming">
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- banner -->
 
-    <!-- about -->
-    <div class="ds-about-section">
-      <div class="container">
-        <section>
-            <h2 class="ds-heading">Acerca de mí</h2>
-                <p>Soy ingeniero electrónico, recientemente graduado en la Facultad de Ingeniería de la Universidad de Buenos Aires. Trabajo en sistemas embebidos y en el desarrollo de software en C/C++, con foco en diseño orientado a objetos y arquitectura de software. Mis intereses incluyen la aplicación de estas competencias en entornos espaciales, industriales y biomédicos, así como el desarrollo de proyectos de software de propósito general.</p>            <!-- <div class="ds-button-sec text-center">
-                <a href="#" class="ds-button">Download Resume</a>
-            </div> -->
-        </section>
-      </div>
-    </div>
-    <!-- about -->
+
 
     <!--  Skills -->
     <div class="ds-skills-section">
@@ -125,7 +130,7 @@
        <div class="row ds-experience-list">
            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
               <section>
-                <span class="ds-year">2025 - 2026</span>
+                <span class="ds-year">2025 - Actualidad </span>
                 <h3 class="ds-officename">Asistente de investigación</h3>
                 <span class="ds-department">SUPSI - Scuola universitaria professionale della Svizzera italiana</span>
                 <p>Estadía de investigación y desarrollo en el ISEA (Istituto sistemi e elettronica applicata), Lugano, Suiza. Actualmente participo en el diseño y construcción de un espectrómetro Raman portátil, que integra un sistema óptico de dispersión, un sensor CCD y una arquitectura mixta basada en un microcontrolador STM32F469 y una Raspberry Pi 4.</p>
@@ -133,6 +138,15 @@
             </div>
 
            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <section>
+              <span class="ds-year">2023 - 2024</span>
+              <h3 class="ds-officename">Data & Management Control Intern</h3>
+              <span class="ds-department">Pan American Energy</span>
+              <p> Desarrollo de soluciones de análisis de datos en Python, con foco en automatización y modelos de Machine Learning. Participación en proyectos de análisis predictivo y visualización de datos para el monitoreo de variables operativas. Monitoreo y análisis de tareas de sensorización utilizando WellData, OpenWells y Power BI. Búsqueda de nuevas tecnologías.</p>
+            </section>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
              <section>
                <span class="ds-year">2019 - Actualidad</span>
                <h3 class="ds-officename">Ayudante segundo</h3>
@@ -140,15 +154,6 @@
                <p>Dictado de clases en cursos de Física II/Electricidad, magnetismo y calor. Desarrollo de prácticas de laboratorio.</p>
              </section>
            </div>
-
-           <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-            <section>
-              <span class="ds-year">2023 - 2024</span>
-              <h3 class="ds-officename">Data & Management Control Intern</h3>
-              <span class="ds-department">Pan American Energy</span>
-              <p> Desarrollo de soluciones automatizadas y Data Analytics, principalmente en Python. Monitoreo y análisis de tareas de sensorización utilizando WellData, OpenWells y Power BI. Búsqueda de nuevas tecnologías.</p>
-            </section>
-          </div>
 
            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
              <section>
@@ -200,6 +205,7 @@
                           <p> Proyecto personal orientado al diseño de software y la programación orientada a objetos. Implementación de la lógica del juego de ajedrez, incluyendo validación de movimientos, gestión de turnos, estados especiales y una arquitectura modular basada en clases. </p>
                           <p> El proyecto se encuentra en desarrollo e incluye una interfaz gráfica (GUI). El foco principal está puesto en arquitectura de software, separación de responsabilidades y diseño mantenible en C++. </p>
                           <a href="https://github.com/FranciscoSpaltro/ChessBuddy" target="_blank" class="ds-button">Repositorio</a>
+                          <p></p>
                       </section>
                   </div>
               </div>
@@ -226,6 +232,7 @@
                             <h3 class="ds-work-tilte">Medidor de capacidad</h3>
                             <p>Desarrollo de un programa en ASM que calcula el valor de un capacitor desconocido y muestra en la PC el valor obtenido y su curva de carga, como parte del trabajo práctico integrador de Laboratorio de Microprocesadores (FIUBA). El programa se grabó sobre un Atmega328p y se utilizó la placa de desarrollo Arduino UNO. El sistema genera un pulso de 5V que carga el capacitor y adquiere los valores de tensión utilizando el ADC, hasta llegar al 63.3% de la carga. Con el TIMER 1 se mide el tiempo de carga y, luego, se calcula el valor del capacitor. Se transmite via serie los valores medidos y la capacitancia calculada.</p>
                             <a href="https://github.com/FranciscoSpaltro/Capacimeter_ASM" target="_blank" class="ds-button"> Repositorio</a>
+                            <p></p>
                         </section>
                     </div>
                     <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">

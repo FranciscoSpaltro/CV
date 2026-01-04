@@ -169,3 +169,81 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 
 
 }
+
+.ds-banner{
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+/* izquierda: título */
+.ds-banner-welcome{
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 18px;
+  color: #000;
+}
+
+.ds-hero-title{
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000;
+  margin: 0;
+}
+
+/* derecha: about */
+.ds-hero-about{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.ds-mini-strip{
+  margin-top: 34px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.ds-mini-strip-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  padding: 18px 0 6px;
+  flex-wrap: nowrap; /* una al lado de la otra */
+}
+
+.ds-mini-strip-inner img{
+  width: 400px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  flex: 0 0 auto;
+}
+
+/* mobile: si no entra, que baje prolijo */
+@media (max-width: 768px){
+  .ds-banner{ padding-top: 120px; }
+
+  .ds-mini-strip-inner{
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .ds-mini-strip-inner img{
+    width: 160px !important;
+    height: 60px !important;
+  }
+
+  .ds-hero-title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
