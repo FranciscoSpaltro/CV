@@ -73,9 +73,9 @@
 
         <div class="ds-mini-strip">
           <div class="ds-mini-strip-inner">
-            <img src="assets/images/banner_electronic.jpg" alt="Electronics">
-            <img src="assets/images/banner_space.jpg" alt="Space">
-            <img src="assets/images/banner_programming.jpg" alt="Programming">
+            <img src="assets/images/banner/banner_electronic.jpg" alt="Electronics">
+            <img src="assets/images/banner/banner_space.jpg" alt="Space">
+            <img src="assets/images/banner/banner_programming.jpg" alt="Programming">
           </div>
         </div>
 
@@ -192,6 +192,14 @@
               Undergraduate final project focused on the design and implementation of a functional onboard computer (OBC) prototype for a CubeSat, including its corresponding CI/CD validation environment.
             </p>
 
+            <div class="ds-work-gallery mt-3">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                  <img src="assets/images/trabajos/cubesat/complete.png" class="img-fluid rounded shadow-sm d-block mx-auto" alt="OBC with Hardware-in-the-loop setup">
+                </div>
+              </div>
+            </div>
+
             <details class="ds-work-more">
               <summary>View more</summary>
 
@@ -214,6 +222,52 @@
               <a href="https://gitlab.com/fspaltro/FiubaSAT" target="_blank" class="ds-button">Repository</a>
               <a href="assets/docs/Informe_Tesis.pdf" target="_blank" class="ds-button">📄 Report</a>
             </div>
+          </article>
+        </div>
+
+        <!-- 2) Raman -->
+        <div class="col-12 col-md-6">
+          <article class="ds-work-card">
+            <h3 class="ds-work-title">
+              Hardware and Firmware Architecture and Development for a Low-Cost Portable Raman Spectrometer.
+            </h3>
+
+            <p class="ds-work-desc">
+            Research project conducted at SUPSI (Switzerland) focused on the end-to-end design of a precision scientific instrument, ranging from PCB routing to real-time acquisition firmware.            </p>
+
+            <div class="ds-work-gallery mb-3">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="assets/images/trabajos/raman/pcb_a_bottom.jpg" class="img-fluid rounded shadow-sm" alt="PCB A Bottom">
+                </div>
+                <div class="col-4">
+                  <img src="assets/images/trabajos/raman/pcb_b_top.jpg" class="img-fluid rounded shadow-sm" style="transform: rotate(90deg);" alt="PCB B Top">
+                </div>
+                <div class="col-4">
+                  <img src="assets/images/trabajos/raman/pcb_a_top.jpg" class="img-fluid rounded shadow-sm" alt="PCB A Top">
+                </div>
+              </div>
+            </div>
+
+            <!-- salto de linea -->
+            <p></p>
+
+            <details class="ds-work-more">
+              <summary>See more</summary>
+
+              <p>
+                A hybrid architecture was designed using an STM32F446 (ARM Cortex-M4) for low-level control and a Raspberry Pi 4 for data processing. The development featured optimized firmware utilizing hardware timers, ADCs, and DMA-based data acquisition to ensure high measurement integrity.
+              </p>
+
+              <p>
+                The main processing board was designed from scratch in Altium Designer, integrating the MCU, motor control modules, and custom power electronics into a highly restricted form factor. The project was completed with the design of custom 3D mechanical parts for the precise alignment of optical mounts and final system integration.
+              </p>
+            </details>
+            <p></p>
+            
+            <div class="ds-work-actions">
+              <a href="https://github.com/FranciscoSpaltro/PocketRaman" target="_blank" class="ds-button">Repository</a>
+              </div>
           </article>
         </div>
 

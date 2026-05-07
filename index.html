@@ -72,9 +72,9 @@
 
         <div class="ds-mini-strip">
           <div class="ds-mini-strip-inner">
-            <img src="assets/images/banner_electronic.jpg" alt="Electronics">
-            <img src="assets/images/banner_space.jpg" alt="Space">
-            <img src="assets/images/banner_programming.jpg" alt="Programming">
+            <img src="assets/images/banner/banner_electronic.jpg" alt="Electronics">
+            <img src="assets/images/banner/banner_space.jpg" alt="Space">
+            <img src="assets/images/banner/banner_programming.jpg" alt="Programming">
           </div>
         </div>
 
@@ -188,11 +188,19 @@
                   Trabajo Práctico Profesional de grado orientado al diseño e implementación de un prototipo funcional de computadora de abordo (OBC) para un CubeSat junto a su correspondiente entorno de validación CI/CD.
                 </p>
 
+                <div class="ds-work-gallery mt-3">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                      <img src="assets/images/trabajos/cubesat/complete.png" class="img-fluid rounded shadow-sm d-block mx-auto" alt="OBC with Hardware-in-the-loop setup">
+                    </div>
+                  </div>
+                </div>
+
                 <details class="ds-work-more">
                   <summary>Ver más</summary>
 
                   <p>
-                    El proyecto se enmarcó dentro de una iniciativa de la Facultad de Ingeniería de la
+                    El proyecto se enmarcó dentro de la iniciativa ASTAR de la Facultad de Ingeniería de la
                     Universidad de Buenos Aires orientada al desarrollo y lanzamiento de un CubeSat.
                     Se abordó la investigación de arquitecturas de microcontroladores compatibles con
                     estándares CubeSat, el desarrollo de protocolos de comunicación entre subsistemas
@@ -213,7 +221,54 @@
               </article>
             </div>
 
-            <!-- 2) ChessBuddy -->
+            <!-- 2) Raman -->
+            <div class="col-12 col-md-6">
+              <article class="ds-work-card">
+                <h3 class="ds-work-title">
+                  Arquitectura y desarrollo de hardware y firmware para un espectrómetro Raman portátil de bajo costo.
+                </h3>
+
+                <p class="ds-work-desc">
+                  Proyecto de investigación desarrollado en SUPSI (Suiza) centrado en el diseño integral de un instrumento científico de precisión, abarcando desde el ruteo de la PCB hasta el firmware de adquisición en tiempo real.
+                </p>
+
+                <div class="ds-work-gallery mb-3">
+                  <div class="row align-items-center">
+                    <div class="col-4">
+                      <img src="assets/images/trabajos/raman/pcb_a_bottom.jpg" class="img-fluid rounded shadow-sm" alt="PCB A Bottom">
+                    </div>
+                    <div class="col-4">
+                      <img src="assets/images/trabajos/raman/pcb_b_top.jpg" class="img-fluid rounded shadow-sm" style="transform: rotate(90deg);" alt="PCB B Top">
+                    </div>
+                    <div class="col-4">
+                      <img src="assets/images/trabajos/raman/pcb_a_top.jpg" class="img-fluid rounded shadow-sm" alt="PCB A Top">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- salto de linea -->
+                <p></p>
+
+                <details class="ds-work-more">
+                  <summary>Ver más</summary>
+
+                  <p>
+                    Se diseñó una arquitectura mixta utilizando un STM32F446 (ARM Cortex-M4) para el control de bajo nivel y una Raspberry Pi 4 para el procesamiento de datos. El desarrollo incluyó firmware optimizado mediante el uso de timers de hardware, ADC y adquisición de datos basada en DMA para garantizar la integridad de las mediciones.
+                  </p>
+
+                  <p>
+                    La placa de procesamiento principal fue diseñada desde cero en Altium Designer, integrando el MCU, módulos de control de motores y electrónica de potencia personalizada en un factor de forma altamente restringido. El proyecto se completó con el diseño de piezas mecánicas en 3D para la alineación precisa de las monturas ópticas y la integración final del sistema.
+                  </p>
+                </details>
+                <p></p>
+                
+                <div class="ds-work-actions">
+                  <a href="https://github.com/FranciscoSpaltro/PocketRaman" target="_blank" class="ds-button">Repositorio</a>
+                  </div>
+              </article>
+            </div>
+
+            <!-- 3) ChessBuddy -->
             <div class="col-12 col-md-6">
               <article class="ds-work-card">
                 <h3 class="ds-work-title">Motor de ajedrez en C++</h3>
@@ -228,7 +283,7 @@
               </article>
             </div>
 
-            <!-- 3) Solitario -->
+            <!-- 4) Solitario -->
             <div class="col-12 col-md-6">
               <article class="ds-work-card">
                 <h3 class="ds-work-title">Solitario (Spider y Klondike) en Java</h3>
@@ -243,7 +298,7 @@
               </article>
             </div>
 
-            <!-- 4) PeggleGame_C -->
+            <!-- 5) PeggleGame -->
             <div class="col-12 col-md-6">
               <article class="ds-work-card">
                 <h3 class="ds-work-title">Videojuego estilo Peggle en C</h3>
@@ -260,7 +315,7 @@
             </div>
 
 
-            <!-- 5) Capacimeter ASM -->
+            <!-- 6) Capacimeter ASM -->
             <div class="col-12 col-md-6">
               <article class="ds-work-card">
                 <h3 class="ds-work-title">Medidor de capacidad (ASM + ATmega328p)</h3>
